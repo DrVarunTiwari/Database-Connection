@@ -33,9 +33,11 @@ Partial Class Alloperation
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -126,6 +128,8 @@ Partial Class Alloperation
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.TextBox4)
         Me.Panel1.Controls.Add(Me.TextBox3)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label2)
@@ -137,14 +141,12 @@ Partial Class Alloperation
         Me.Panel1.Size = New System.Drawing.Size(541, 267)
         Me.Panel1.TabIndex = 10
         '
-        'Button6
+        'TextBox3
         '
-        Me.Button6.Location = New System.Drawing.Point(435, 222)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
-        Me.Button6.TabIndex = 0
-        Me.Button6.Text = "Exit"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.TextBox3.Location = New System.Drawing.Point(142, 82)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(218, 20)
+        Me.TextBox3.TabIndex = 11
         '
         'Label3
         '
@@ -155,14 +157,32 @@ Partial Class Alloperation
         Me.Label3.TabIndex = 10
         Me.Label3.Text = "Cage"
         '
-        'TextBox3
+        'Button6
         '
-        Me.TextBox3.Location = New System.Drawing.Point(142, 82)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(218, 20)
-        Me.TextBox3.TabIndex = 11
+        Me.Button6.Location = New System.Drawing.Point(435, 222)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.TabIndex = 0
+        Me.Button6.Text = "Search"
+        Me.Button6.UseVisualStyleBackColor = True
         '
-        'Form2
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(192, 162)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox4.TabIndex = 11
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(116, 165)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(70, 13)
+        Me.Label4.TabIndex = 12
+        Me.Label4.Text = "Enter Cid No."
+        '
+        'Alloperation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -175,7 +195,7 @@ Partial Class Alloperation
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel1)
-        Me.Name = "Form2"
+        Me.Name = "Alloperation"
         Me.Text = "Form2"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
@@ -198,4 +218,6 @@ Partial Class Alloperation
     Friend WithEvents Button6 As Button
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents TextBox4 As TextBox
 End Class
