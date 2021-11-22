@@ -75,4 +75,8 @@ Public Class Alloperationwithdatareader
             MsgBox("Record Delete Successfully")
         End If
     End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        End
+    End Sub
 End Class

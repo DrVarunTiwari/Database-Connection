@@ -35,6 +35,7 @@ Partial Class Alloperationwithdatareader
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -125,6 +126,7 @@ Partial Class Alloperationwithdatareader
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.Button6)
         Me.Panel1.Controls.Add(Me.TextBox3)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label2)
@@ -151,6 +153,15 @@ Partial Class Alloperationwithdatareader
         Me.Label3.Size = New System.Drawing.Size(32, 13)
         Me.Label3.TabIndex = 10
         Me.Label3.Text = "Cage"
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(435, 222)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.TabIndex = 12
+        Me.Button6.Text = "Exit"
+        Me.Button6.UseVisualStyleBackColor = True
         '
         'Alloperationwithdatareader
         '
@@ -186,4 +197,5 @@ Partial Class Alloperationwithdatareader
     Friend WithEvents Panel1 As Panel
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label3 As Label
+    Friend WithEvents Button6 As Button
 End Class
