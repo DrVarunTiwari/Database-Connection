@@ -33,11 +33,8 @@ Partial Class Alloperationwithdatareader
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -70,7 +67,7 @@ Partial Class Alloperationwithdatareader
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(320, 301)
+        Me.Button4.Location = New System.Drawing.Point(273, 222)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 3
@@ -128,34 +125,16 @@ Partial Class Alloperationwithdatareader
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.TextBox4)
         Me.Panel1.Controls.Add(Me.TextBox3)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.ListBox1)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.Button6)
         Me.Panel1.Location = New System.Drawing.Point(47, 79)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(541, 267)
         Me.Panel1.TabIndex = 10
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(116, 165)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(70, 13)
-        Me.Label4.TabIndex = 12
-        Me.Label4.Text = "Enter Cid No."
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(192, 162)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 11
         '
         'TextBox3
         '
@@ -173,15 +152,6 @@ Partial Class Alloperationwithdatareader
         Me.Label3.TabIndex = 10
         Me.Label3.Text = "Cage"
         '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(435, 222)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
-        Me.Button6.TabIndex = 0
-        Me.Button6.Text = "Search"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
         'Alloperationwithdatareader
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -190,7 +160,6 @@ Partial Class Alloperationwithdatareader
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -215,9 +184,6 @@ Partial Class Alloperationwithdatareader
     Friend WithEvents Label2 As Label
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button6 As Button
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox4 As TextBox
 End Class
