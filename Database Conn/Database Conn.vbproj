@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datatabl1.Designer.vb">
+      <DependentUpon>Datatabl1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Datatabl1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ShowRecord.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -80,10 +86,10 @@
       <DependentUpon>ShowRecord.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Alloperation.Designer.vb">
-      <DependentUpon>Alloperation.vb</DependentUpon>
+    <Compile Include="Alloperationwithdatareader.Designer.vb">
+      <DependentUpon>Alloperationwithdatareader.vb</DependentUpon>
     </Compile>
-    <Compile Include="Alloperation.vb">
+    <Compile Include="Alloperationwithdatareader.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -104,11 +110,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Datatabl1.resx">
+      <DependentUpon>Datatabl1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ShowRecord.resx">
       <DependentUpon>ShowRecord.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Alloperation.resx">
-      <DependentUpon>Alloperation.vb</DependentUpon>
+    <EmbeddedResource Include="Alloperationwithdatareader.resx">
+      <DependentUpon>Alloperationwithdatareader.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
