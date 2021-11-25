@@ -66,7 +66,6 @@ Public Class Alloperationwithdatareader
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         'for delete record
         Dim i As Integer
-
         con = New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\VarunTiwari\Desktop\customer.mdb")
         con.Open()
         cmd = New OleDbCommand("delete from cust where cid='" + TextBox1.Text + "'", con)
@@ -75,7 +74,6 @@ Public Class Alloperationwithdatareader
             MsgBox("Record Delete Successfully")
         End If
     End Sub
-
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         End
     End Sub

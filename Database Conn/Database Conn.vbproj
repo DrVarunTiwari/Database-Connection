@@ -48,10 +48,13 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -77,6 +80,12 @@
       <DependentUpon>Datatabl1.vb</DependentUpon>
     </Compile>
     <Compile Include="Datatabl1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataAdapter.Designer.vb">
+      <DependentUpon>DataAdapter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataAdapter.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ShowRecord.vb">
@@ -113,6 +122,9 @@
     <EmbeddedResource Include="Datatabl1.resx">
       <DependentUpon>Datatabl1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DataAdapter.resx">
+      <DependentUpon>DataAdapter.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ShowRecord.resx">
       <DependentUpon>ShowRecord.vb</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +149,11 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="customer.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
