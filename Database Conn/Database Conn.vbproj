@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2C3E817D-6624-4316-B235-FB78A4D95503}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Database_Conn.empdata</StartupObject>
+    <StartupObject>Database_Conn.doctordata1</StartupObject>
     <RootNamespace>Database_Conn</RootNamespace>
     <AssemblyName>Database Conn</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -94,6 +94,18 @@
     <Compile Include="DataAdapter.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="doctordata.Designer.vb">
+      <DependentUpon>doctordata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="doctordata.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctordata1.Designer.vb">
+      <DependentUpon>doctordata1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="doctordata1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="empdata.Designer.vb">
       <DependentUpon>empdata.vb</DependentUpon>
     </Compile>
@@ -136,6 +148,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DataAdapter.resx">
       <DependentUpon>DataAdapter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctordata.resx">
+      <DependentUpon>doctordata.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctordata1.resx">
+      <DependentUpon>doctordata1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="empdata.resx">
       <DependentUpon>empdata.vb</DependentUpon>
